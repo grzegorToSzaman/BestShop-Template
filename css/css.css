@@ -21,6 +21,7 @@ header .container{
     box-shadow: 0 3px 6px #00000029;
     padding-left: 136px;
     padding-right: 137px;
+    justify-content: space-between;
     align-items: center;
 }
 header .header__logo {
@@ -43,9 +44,6 @@ header ul li a {
     font-size: 11px;
     font-weight: bold;
     letter-spacing: 3px;
-}
-header .container {
-    justify-content: space-between;
 }
 header ul li a:hover {
     color: black;
@@ -85,4 +83,34 @@ section.firstSection a {
     text-decoration: none;
     box-shadow: 5px 10px 14px #07ACE629;
     margin-top: 38px;
+}
+
+     /*styles for second section*/
+
+section.secondSection .container {
+    height: 531px;
+}
+section.secondSection h2 {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 36px;
+}
+section.secondSection div.allColumns {
+    margin-top: 100px;
+    justify-content: space-evenly;
+}
+section.secondSection div.allColumns .eachColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section.secondSection h3 {
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 6px;
+    margin: 20px auto;
+}
+section.secondSection p {
+    font-size: 17px;
+    color: #A5A5A5;
 }
