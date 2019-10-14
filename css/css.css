@@ -15,7 +15,6 @@ body {
 header {
     width: 100%;
     background-color: #ffffff;
-    /*height: 70px;*/
 }
 header .container{
     height: 70px;
@@ -32,12 +31,13 @@ header .header__logo {
     color: #08A6E4;
 }
 header ul {
+    width: 500px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
-header ul li:not(:last-child) {
+/*header ul li:not(:last-child) {
     margin-right: 95px;
-}
+}*/
 header ul li a {
     text-transform: uppercase;
     text-decoration: none;
@@ -232,6 +232,7 @@ section.thirdSection div.thirdArticle .separateText {
     flex-direction: column;
     justify-content: center;
     padding-left: 100px;
+    padding-right: 10px;
 }
 section.thirdSection div.thirdArticle img {
     height: 200px;
@@ -244,4 +245,65 @@ section.thirdSection div.thirdArticle .image {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+      /*styles for boxes*/
+section.fourthSection .container {
+    padding-bottom: 50px;
+}
+section.fourthSection h2 {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 36px;
+}
+section.fourthSection h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+section.fourthSection .boxes {
+    /*width: 1200px;*/
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+section.fourthSection .box {
+    width: 372px;
+    height: 461px;
+    border: 2px solid crimson;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+section.fourthSection .secondBox h4:after,
+section.fourthSection .thirdBox h4:after {
+    content: "<br>Limited offer";
+}
+section.fourthSection .box li {
+    text-align: center;
+}
+
+    /*styles for form*/
+
+section.fifthSection .container {
+    display: flex;
+    justify-content: center;
+    width: 1124px;
+}
+section.fifthSection .contact {
+    border: 1px solid red;
+    width: 400px;
+}
+section.fifthSection .userInfo {
+    border: 1px solid red;
+    width: 400px;
+}
+section.fifthSection input {
+    display: block;
+    border-bottom: 2px solid red;
+}
+section.fifthSection input[type="checkbox"] {
+    display: inline-block;
 }
