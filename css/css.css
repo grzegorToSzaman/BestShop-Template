@@ -17,6 +17,7 @@ header {
     background-color: #ffffff;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 header .container{
     height: 70px;
@@ -250,13 +251,15 @@ section.thirdSection div.thirdArticle .image {
 }
 
       /*styles for boxes*/
+
+
 section.fourthSection .container {
-    padding-bottom: 50px;
+    margin-bottom: 100px;
 }
 section.fourthSection h2 {
     text-align: center;
     margin-top: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
     font-size: 36px;
 }
 section.fourthSection h3 {
@@ -274,13 +277,23 @@ section.fourthSection .boxes {
 section.fourthSection .box {
     width: 372px;
     height: 461px;
-    border: 1px solid #07ACE6;
+    /*border: 1px solid #07ACE6;*/
     border-radius: 18px;
     box-shadow: 5px 10px 27px #07ACE629;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+}
+section.fourthSection .firstBox {
+    border: 1px solid #FB3B64;
+}
+section.fourthSection .secondBox {
+    border: 1px solid #07ACE6;
+    transform: scale(1.1);
+}
+section.fourthSection .thirdBox {
+    border: 1px solid #55DFB4;
 }
 section.fourthSection .box ul {
     margin-top: 60px;
@@ -301,6 +314,14 @@ section.fourthSection .box li {
     list-style-image: url("../images/Ckechmark-1.svg");
     list-style-position: inside;
 }
+section.fourthSection .firstBox li:last-child,
+section.fourthSection .firstBox li:nth-last-child(2){
+    list-style-image: url("../images/Close.svg");
+}
+section.fourthSection .secondBox li:last-child {
+    list-style-image: url("../images/Close.svg");
+}
+
 section.fourthSection .box h4 {
     font-size: 46px;
     font-weight: lighter;
@@ -309,9 +330,25 @@ section.fourthSection .box h4 {
     /*margin-top: 34px;*/
 }
 section.fourthSection .box button {
-    background-color: #FB3B64;
+    /*background-color: #FB3B64;*/
     position: relative;
-    top: 20px;
+    top: 29px;
+    width: 150px;
+    height: 50px;
+    border-radius: 23px;
+    border: none;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+}
+section.fourthSection .firstBox button {
+    background-color: #EB476E;
+}
+section.fourthSection .secondBox button {
+    background-color: #07ACE6;
+}
+section.fourthSection .thirdBox button {
+    background-color: #55DFB4;
 }
 
 
@@ -323,22 +360,50 @@ section.fifthSection .container {
     /*width: 1124px;*/
 }
 section.fifthSection .contact {
-    border: 1px solid red;
     width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 section.fifthSection .userInfo {
-    border: 1px solid red;
     width: 400px;
 }
-section.fifthSection input {
-    display: block;
-    border-bottom: 2px solid red;
+section.fifthSection .formRow {
+    display: flex;
+    flex-direction: column;
 }
-section.fifthSection input[type="checkbox"] {
-    display: inline-block;
+section.fifthSection .formRow label {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #08A6E4;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+section.fifthSection .lastRow {
+    display: flex;
+    margin-top: 20px;
+}
+section.fifthSection .lastRow label {
+    font-size: 12px;
+    color: #707070;
+}
+section.fifthSection input {
+    border: none;
+    border-bottom: 1px solid #95989A;
+}
+section.fifthSection button {
+    width: 226px;
+    height: 57px;
+    background-color: #08A6E4;
+    border-radius: 35px;
+    border: none;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    bottom: -30px;
+    right: -175px;
 }
 section.fifthSection .contact > p {
     margin-bottom: 42px;
@@ -379,15 +444,23 @@ section.fifthSection .contact .leads .telefon {
 
      /*styles for footer*/
 
+
+footer {
+    /*height: 89px;*/
+    box-shadow: 0 -5px 40px #00000029;
+    background-color: #F7F7F7;
+    margin-top: 59px;
+
+}
 footer .container {
     height: 89px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 136px;
-    box-shadow: 0 -5px 40px #00000029;
-    background-color: #F7F7F7;
-    margin-top: 59px;
+    /*box-shadow: 0 -5px 40px #00000029;*/
+    /*background-color: #F7F7F7;*/
+    /*margin-top: 59px;*/
 }
 footer li {
     display: inline-block;
