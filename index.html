@@ -66,7 +66,10 @@
     <section class="thirdSection">
         <div class="container">
             <article class="firstArticle">
-                <img class="firstImage" src="./images/Macbook.png" alt="icon macbook">
+                <div class="firstArticle_image">
+                    <div class="firstArticle_firstImage"></div>
+                    <div class="firstArticle_firstDiv"></div>
+                </div>
                 <div class="textOne">
                     <h2 class="otherFont">Be always first</h2>
                     <p>
@@ -76,7 +79,9 @@
                 </div>
             </article>
             <article class="secondArticle">
-                <img src="./images/iPhone.png" alt="icon iphone" class="secondImage">
+                <div class="secondArticle_image">
+                    <img src="./images/iPhone.png" alt="icon iphone" class="secondImage">
+                </div>
                 <div class="textTwo">
                     <h2 class="otherFont">Your shop is<br>where you are!</h2>
                     <p>
@@ -164,16 +169,18 @@
                 <div class="form">
                     <form>
                         <div class="formRow">
-                            <label for="name" class="form_label">NAME</label>
+                            <label for="name">NAME</label>
                             <input type="text" id="name" name="name">
                         </div>
                         <div class="formRow">
-                            <label for="email" class="form_label">EMAIL</label>
+                            <label for="email">EMAIL</label>
                             <input type="email" id="email" name="email">
                         </div>
                         <div class="lastRow">
-                            <input type="checkbox" id="checkbox" checked>
-                            <label for="checkbox" class="disclaimer_text">
+                            <div class="form__input">
+                                <input type="checkbox" id="checkbox">
+                            </div>
+                            <label for="checkbox">
                                 I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)
                             </label>
                         </div>
