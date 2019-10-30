@@ -30,13 +30,14 @@ header .header__logo {
     font-size: 32px;
     font-weight: lighter;
     color: #08A6E4;
+    font-family: 'Raleway', sans-serif;
 }
 header ul {
     width: 500px;
     display: flex;
     justify-content: space-between;
 }
-header ul li a {
+header a {
     text-transform: uppercase;
     text-decoration: none;
     color: #A5A5A5;
@@ -45,7 +46,7 @@ header ul li a {
     letter-spacing: 3px;
     cursor: pointer;
 }
-header ul li a:hover {
+header a:hover {
     color: black;
     padding-bottom: 25px;
     border-bottom: 2px solid #07ACE6;
@@ -54,7 +55,7 @@ header ul li a:hover {
     /*styles for first section*/
 
 
-section.firstSection {
+.first__section {
     width: 100%;
     margin-top: 130px;
     background-image: url("../images/Background.png");
@@ -62,20 +63,21 @@ section.firstSection {
     background-repeat: no-repeat;
     background-position: bottom;
 }
-section.firstSection .container {
+.first__section .container {
     height: 550px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-section.firstSection h1 {
+.first__section h1 {
+    font-family: 'Raleway', sans-serif;
     font-size: 49px;
 }
-section.firstSection p {
+.first__section p {
     font-size: 16px;
     margin-top: 20px;
 }
-section.firstSection a {
+.first__section a {
     color: white;
     font-size: 16px;
     font-weight: bold;
@@ -89,82 +91,83 @@ section.firstSection a {
 
      /*styles for second section*/
 
-section.secondSection {
+.second__section {
     width: 100%;
     background-color: #ffffff;
+    font-family: 'Raleway', sans-serif;
 }
-section.secondSection .container {
+.second__section .container {
     height: 400px;
 }
-section.secondSection h2 {
+.second__section h2 {
     margin-top: 100px;
     text-align: center;
     font-size: 36px;
 }
-section.secondSection div.allColumns {
+.second__section--allColumns {
     margin-top: 100px;
     display: flex;
     justify-content: space-evenly;
 }
-section.secondSection div.allColumns .eachColumn {
+.second__section--column {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-section.secondSection div.allColumns .eachColumn img {
+.second__section img {
     height: 70px;
     width: 70px;
     position: relative;
     left: 30px;
 }
-section.secondSection h3 {
+.second__section h3 {
     text-align: center;
     font-size: 20px;
     font-weight: 900;
     letter-spacing: 6px;
     margin: 20px auto;
 }
-section.secondSection p {
+.second__section p {
     text-align: center;
     font-size: 17px;
     color: #A5A5A5;
 }
-section.secondSection div.allColumns .eachColumn .person {
+.second__section .person {
     background-color: #FB3B64;
     border-radius: 50%;
 }
-section.secondSection div.allColumns .eachColumn .eye{
+.second__section .eye{
     background-color: #08A6E4;
     border-radius: 50%;
 }
-section.secondSection div.allColumns .eachColumn .catalog {
+.second__section .catalog {
     background-color: #55DFB4;
     border-radius: 50%;
 }
 
      /*styles for third section*/
 
-section.thirdSection {
+.third__section {
     width: 100%;
     background-color: #F7F7F7;
 }
-section.thirdSection article {
+.third__section .container {
+    padding: 50px 0;
+}
+article {
     height: 370px;
     width: 1124px;
     background-color: #FFFFFF;
-    margin: 0 auto;
+    margin: auto;
     border: 1px solid #E8E9ED;
 }
-section.thirdSection .container {
-    padding: 50px 0;
-}
-section.thirdSection article.firstArticle {
+.first--article {
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
     align-items: center;
 }
-section.thirdSection article.firstArticle .firstArticle_firstImage {
+.first--article--icon {
     height: 180px;
     width: 180px;
     background-color: #FB3B64;
@@ -174,7 +177,7 @@ section.thirdSection article.firstArticle .firstArticle_firstImage {
     top: 61px;
     left: 130px;
 }
-section.thirdSection article.firstArticle .firstArticle_firstDiv  {
+.first--article--background {
     height: 219px;
     width: 386px;
     background-image: url("../images/Macbook.png");
@@ -186,55 +189,42 @@ section.thirdSection article.firstArticle .firstArticle_firstDiv  {
     top: -53px;
     left: -103px
 }
-section.thirdSection article.firstArticle .textOne {
+.first--article--text {
     height: 150px;
     width: 400px;
     padding-left: 100px;
 }
-section.thirdSection p {
+.third__section p {
     font-size: 16px;
     margin-top: 30px;
 }
-section.thirdSection h2 {
+.third__section h2 {
     font-size: 36px;
+    font-family: 'Raleway', sans-serif;
 }
-section.thirdSection article.secondArticle {
+.second--article {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 30px auto;
 }
-section.thirdSection article.secondArticle .secondArticle_image {
+.second--article--circle {
     height: 320px;
     width: 320px;
     background-color: #07ACE6;
     border-radius: 50%;
 }
-section.thirdSection article.secondArticle .secondImage {
+.second--article--icon {
     height: 328px;
     width: 426px;
     margin-left: 80px;
 }
-section.thirdSection article.secondArticle .textTwo {
+.second--article--text {
     height: 150px;
     width: 400px;
     padding-right: 100px;
 }
-section.thirdSection .line {
-    height: 4px;
-    width: 320px;
-    margin-top: 50px;
-}
-section.thirdSection .firstLine {
-    background-color: #FB3B64;
-}
-section.thirdSection .secondLine {
-    background-color: #07ACE6;
-}
-section.thirdSection .thirdLine {
-    background-color: #55DFB4;
-}
-section.thirdSection div.thirdArticle {
+.third--article {
     height: 370px;
     width: 1124px;
     margin: 0 auto;
@@ -243,7 +233,7 @@ section.thirdSection div.thirdArticle {
     flex-direction: row-reverse;
     align-items: center;
 }
-section.thirdSection div.thirdArticle .separateText {
+.third--article--text {
     height: 370px;
     width: 554px;
     background-color: #FFFFFF;
@@ -254,11 +244,11 @@ section.thirdSection div.thirdArticle .separateText {
     padding-right: 10px;
     border: 1px solid #E8E9ED;
 }
-section.thirdSection div.thirdArticle img {
+.third--article--background img {
     height: 207px;
     width: 296px;
 }
-section.thirdSection div.thirdArticle .image {
+.third--article--background {
     height: 370px;
     width: 370px;
     background-color: #55DFB4;
@@ -266,35 +256,41 @@ section.thirdSection div.thirdArticle .image {
     justify-content: center;
     align-items: center;
 }
+.line {
+    height: 4px;
+    width: 320px;
+    margin-top: 50px;
+}
+.first--line {
+    background-color: #FB3B64;
+}
+.second--line {
+    background-color: #07ACE6;
+}
+.third--line {
+    background-color: #55DFB4;
+}
 
       /*styles for boxes*/
 
 
-section.fourthSection .container {
+.fourth__section .container {
     margin-bottom: 100px;
 }
-section.fourthSection h2 {
+.fourth__section h2 {
     text-align: center;
     margin-top: 100px;
     margin-bottom: 60px;
     font-size: 36px;
-}
-section.fourthSection h3 {
     font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 34px
 }
-section.fourthSection .boxes {
-    /*width: 1200px;*/
+.boxes {
     display: flex;
     justify-content: space-evenly;
-    margin: 0 auto;
 }
-section.fourthSection .box {
+.box {
     width: 372px;
     height: 461px;
-    /*border: 1px solid #07ACE6;*/
     border-radius: 18px;
     box-shadow: 5px 10px 27px #07ACE629;
     display: flex;
@@ -302,20 +298,10 @@ section.fourthSection .box {
     justify-content: space-evenly;
     align-items: center;
 }
-section.fourthSection .firstBox {
-    border: 1px solid #FB3B64;
-}
-section.fourthSection .secondBox {
-    border: 1px solid #07ACE6;
-    transform: scale(1.1);
-}
-section.fourthSection .thirdBox {
-    border: 1px solid #55DFB4;
-}
-section.fourthSection .box ul {
+.box ul {
     margin-top: 60px;
 }
-section.fourthSection .box:not(:first-child) ul:before {
+.box:not(:first-child) ul:before {
     content: "Limited offer";
     position: relative;
     bottom: 76px;
@@ -324,28 +310,26 @@ section.fourthSection .box:not(:first-child) ul:before {
     font-size: 12px;
     font-weight: bold;
 }
-section.fourthSection .box li {
+.box li {
     text-align: center;
     font-size: 14px;
     padding-top: 20px;
     list-style-image: url("../images/Ckechmark-1.svg");
     list-style-position: inside;
 }
-section.fourthSection .firstBox li:last-child,
-section.fourthSection .firstBox li:nth-last-child(2){
-    list-style-image: url("../images/Close.svg");
+.box h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 34px
 }
-section.fourthSection .secondBox li:last-child {
-    list-style-image: url("../images/Close.svg");
-}
-
-section.fourthSection .box h4 {
+.box h4 {
     font-size: 46px;
     font-weight: lighter;
     color: #FB3B64;
     line-height: 200%;
 }
-section.fourthSection .box button {
+.box button {
     position: relative;
     top: 29px;
     width: 150px;
@@ -356,37 +340,85 @@ section.fourthSection .box button {
     font-weight: bold;
     color: white;
 }
-section.fourthSection .firstBox button {
+.first--box {
+    border: 1px solid #FB3B64;
+}
+.first--box button {
     background-color: #EB476E;
 }
-section.fourthSection .secondBox button {
+.second--box {
+    border: 1px solid #07ACE6;
+    transform: scale(1.1);
+}
+.second--box button {
     background-color: #07ACE6;
 }
-section.fourthSection .thirdBox button {
+.third--box {
+    border: 1px solid #55DFB4;
+}
+.third--box button {
     background-color: #55DFB4;
+}
+.first--box li:last-child,
+.first--box li:nth-last-child(2),
+.second--box li:last-child {
+    list-style-image: url("../images/Close.svg");
 }
 
 
     /*styles for form*/
 
-section.fifthSection .container {
+.fifth__section .container {
     display: flex;
     justify-content: center;
 }
-section.fifthSection .contact {
+.fifth__section--contact {
     width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-section.fifthSection .userInfo {
+.fifth__section--contact > p {
+    margin-bottom: 42px;
+    margin-top: 22px;
+    font-size: 16px;
+}
+.fifth__section--contact h2 {
+    font-size: 49px;
+    font-family: 'Raleway', sans-serif;
+}
+.leads {
+    display: flex;
+}
+.leads p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #A5A5A5;
+    padding: 4px 0;
+}
+.leads--email {
+    min-width: 180px;
+    text-align: right;
+    background-image: url("../images/Mail Icon.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.leads--phone {
+    min-width: 123px;
+    text-align: right;
+    background-image: url("../images/Phone Icon.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-left: 20px;
+}
+.fifth__section--form {
     width: 400px;
 }
-section.fifthSection .formRow {
+.form--row {
     display: flex;
     flex-direction: column;
 }
-section.fifthSection .formRow label {
+.form--row label {
     font-size: 11px;
     letter-spacing: 3px;
     color: #08A6E4;
@@ -394,19 +426,19 @@ section.fifthSection .formRow label {
     margin-top: 20px;
     margin-bottom: 15px;
 }
-section.fifthSection .lastRow {
+.last--row {
     display: flex;
     margin-top: 20px;
 }
-section.fifthSection .lastRow label {
+.last--row label {
     font-size: 12px;
     color: #707070;
 }
-section.fifthSection input {
+.form--row input {
     border: none;
     border-bottom: 1px solid #95989A;
 }
-section.fifthSection input[type="checkbox"] {
+.last--row input[type="checkbox"] {
     -webkit-appearance: none;
     -moz-appearance:
             none;
@@ -424,7 +456,7 @@ section.fifthSection input[type="checkbox"] {
     border: 1px solid #95989A;
     margin-right: 10px;
 }
-section.fifthSection input[type="checkbox"]:checked:after {
+.last--row input[type="checkbox"]:checked:after {
     content: "";
     width: 11px;
     height: 11px;
@@ -435,7 +467,7 @@ section.fifthSection input[type="checkbox"]:checked:after {
     top: 50%;
     transform: translate(-50%, -50%);
 }
-section.fifthSection button {
+.fifth__section--form button {
     width: 226px;
     height: 57px;
     background-color: #08A6E4;
@@ -448,47 +480,13 @@ section.fifthSection button {
     bottom: -30px;
     right: -175px;
 }
-section.fifthSection .contact > p {
-    margin-bottom: 42px;
-    margin-top: 22px;
-    font-size: 16px;
-}
-section.fifthSection .contact > h2 {
-    font-size: 49px;
-}
-section.fifthSection .contact .leads {
-    display: flex;
-}
-section.fifthSection .contact .leads .email {
-    min-width: 180px;
-    text-align: right;
-    background-image: url("../images/Mail Icon.svg");
-    background-repeat: no-repeat;
-    background-position: left;
-}
-section.fifthSection .contact .leads .email > p {
-    font-size: 16px;
-    font-weight: bold;
-    color: #A5A5A5;
-    padding: 2px 0;
-}
-section.fifthSection .contact .leads .telefon {
-    min-width: 123px;
-    text-align: right;
-    background-image: url("../images/Phone Icon.svg");
-    background-repeat: no-repeat;
-    background-position: left;
-    font-size: 16px;
-    font-weight: bold;
-    color: #A5A5A5;
-    padding: 4px 0;
-    margin-left: 20px;
-}
+
 
      /*styles for footer*/
 
 
 footer {
+    width: 100%;
     box-shadow: 0 -5px 40px #00000029;
     background-color: #F7F7F7;
     margin-top: 59px;
@@ -511,4 +509,5 @@ footer h2 {
     font-weight: lighter;
     color: #08A6E4;
     padding-bottom: 6px;
+    font-family: 'Raleway', sans-serif;
 }
