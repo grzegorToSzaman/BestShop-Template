@@ -4,6 +4,8 @@ body {
 .container {
     max-width: 1352px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
     /*styles of header*/
 
@@ -13,12 +15,10 @@ header {
     position: fixed;
     top: 0;
     z-index: 2;
+    box-shadow: 0 3px 6px #00000029;
 }
 header .container{
     height: 70px;
-    box-shadow: 0 3px 6px #00000029;
-    padding-left: 15px;
-    padding-right: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,24 +31,15 @@ header p {
 }
 .hamburger {
     /*height: 2rem;*/
-    width: 2rem;
+    /*width: 2rem;*/
     display: none;
 }
-.hamburger--line {
-    height: 2px;
-    width: 80%;
-    background-color: #08A6E4;
-    margin-top: 5px;
-}
-.hamburger--line:first-child {
-    margin-top: 0;
-}
-header ul {
+nav ul {
     width: 500px;
     display: flex;
     justify-content: space-between;
 }
-header a {
+nav a {
     text-transform: uppercase;
     text-decoration: none;
     color: #A5A5A5;
@@ -57,11 +48,38 @@ header a {
     letter-spacing: 3px;
     cursor: pointer;
 }
-header a:hover {
+nav a:hover {
     color: black;
     padding-bottom: 25px;
     border-bottom: 2px solid #07ACE6;
 }
+.triggerMenu {
+    /*height: 100px;*/
+    width: 100%;
+    background-color: #ffffff;
+    display: none;
+    box-shadow: 0 -3px 6px #00000029;
+    margin-top: 5px;
+}
+.triggerMenu ul {
+    padding: 20px 0 20px 15px;
+}
+.triggerMenu li:not(:last-child) {
+    padding-bottom: 10px;
+}
+.triggerMenu a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #A5A5A5;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+.triggerMenu a:hover {
+    color: black;;
+}
+
 
     /*styles for first section*/
 
@@ -84,10 +102,12 @@ header a:hover {
 .first__section h1 {
     font-family: 'Raleway', sans-serif;
     font-size: 49px;
+    text-align: center;
 }
 .first__section p {
     font-size: 16px;
     margin-top: 20px;
+    text-align: center;
 }
 .first__section a {
     color: white;
@@ -99,6 +119,7 @@ header a:hover {
     text-decoration: none;
     box-shadow: 5px 10px 14px #07ACE629;
     margin-top: 38px;
+    text-align: center;
 }
 
 
@@ -417,6 +438,7 @@ article {
     background-image: url("../images/Mail Icon.svg");
     background-repeat: no-repeat;
     background-position: left;
+    margin-right: 20px;
 }
 .leads--phone {
     min-width: 123px;
@@ -424,7 +446,6 @@ article {
     background-image: url("../images/Phone Icon.svg");
     background-repeat: no-repeat;
     background-position: left;
-    margin-left: 20px;
 }
 .fifth__section--form {
     width: 400px;
@@ -482,6 +503,9 @@ article {
     top: 50%;
     transform: translate(-50%, -50%);
 }
+form {
+    position: relative;
+}
 .fifth__section--form button {
     width: 226px;
     height: 57px;
@@ -491,9 +515,14 @@ article {
     font-size: 13px;
     font-weight: bold;
     color: white;
-    position: relative;
-    bottom: -30px;
-    right: -175px;
+    margin-top: 15px;
+    margin-left: 50%;
+    float: right;
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    /*right: 0;*/
+    /*transform: translate(-100%, 0);*/
+    /*margin-bottom: 20px;*/
 }
 
 
@@ -511,7 +540,6 @@ footer .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 15px;
 }
 footer li {
     display: inline-block;
@@ -525,6 +553,9 @@ footer h2 {
     color: #08A6E4;
     padding-bottom: 6px;
     font-family: 'Raleway', sans-serif;
+}
+.visible {
+    display: block;
 }
 
 
@@ -607,12 +638,32 @@ footer h2 {
 
 
 @media screen and (max-width: 760px) {
+
+    /*HEADER*/
+    header p {
+        font-weight: normal;
+    }
+
+    nav {
+        display: none;
+    }
+
+    /*SECOND SECTION*/
     .second__section--allColumns {
         display: block;
     }
+
     .second__section--column {
         margin: 20px auto;
     }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+         /*ARTICLES*/
+
     article {
         width: 75vw;
         height: auto;
@@ -651,8 +702,8 @@ footer h2 {
     }
     .second--article--circle {
         margin-left: 0;
-        width: 50%;
-        height: 50%;
+        width: 40%;
+        height: 40%;
     }
     .second--article--icon {
         margin-left: 0;
@@ -681,6 +732,9 @@ footer h2 {
     .line {
         display: none;
     }
+
+         /*BOXES*/
+
     .boxes {
         display: flex;
         flex-direction: column;
@@ -688,11 +742,12 @@ footer h2 {
         align-items: center;
     }
     .box {
-        height: 15rem;
+        height: auto;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         width: 70%;
+        padding: 40px 10px;
     }
     .box ul {
         margin-top: 0;
@@ -709,22 +764,29 @@ footer h2 {
     .second--box {
         margin: 60px 0;
     }
+
+           /*FORM*/
+
     .fifth__section .container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    header p {
-        font-weight: normal;
+    .fifth__section--contact {
+        align-items: center;
+        width: 85%;
     }
-    .hamburger {
-        display: table-cell;
+    .fifth__section--form {
+        width: 85%;
     }
-    .hamburger:hover {
-        cursor: pointer;
+    .leads {
+        flex-wrap: wrap;
     }
-    nav {
-        display: none;
+    .fifth__section--contact > p {
+        text-align: center;
+    }
+    .fifth__section--contact h2 {
+        text-align: center;
     }
 }
