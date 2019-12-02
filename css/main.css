@@ -203,16 +203,39 @@ article {
     align-items: center;
 }
 .first--article--icon {
+    height: 219px;
+    width: 386px;
+    margin-right: 50px;
+    position: relative;
+}
+.first--article--background {
+    position: relative;
+}
+.first--article--background:before {
+    content: "";
+    width: 125px;
+    height: 125px;
+    background-color: #FB3B64;
+    border-radius: 28px;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 37px;
+    top: -52px;
+    z-index: 0;
+
+}
+/*.first--article--icon {
     height: 180px;
     width: 180px;
     background-color: #FB3B64;
     border-radius: 41px;
-    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    !*transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);*!
+    transform: rotate(45deg);
     position: relative;
     top: 61px;
     left: 130px;
-}
-.first--article--background {
+}*/
+/*.first--article--background {
     height: 219px;
     width: 386px;
     background-image: url("../images/Macbook.png");
@@ -223,7 +246,7 @@ article {
     position: relative;
     top: -53px;
     left: -103px;
-}
+}*/
 .first--article--text {
     height: 150px;
     width: 33%;
@@ -330,6 +353,7 @@ article {
     box-shadow: 5px 10px 27px #07ACE629;
     display: block;
     position: relative;
+    min-width: 255px;
 }
 .box ul {
     margin-top: 50px;
@@ -574,13 +598,26 @@ footer h2 {
         align-items: center;
     }
     .first--article--background {
+        width: 100%;
+        text-align: center;
+    }
+    .first--article--background:before {
+        display: none;
+    }
+    .first--article--icon {
+        margin-right: 0;
+        width: 60%;
+        height: auto;
+    }
+    /*.first--article--background {
         top: 0;
         left: 10px;
     }
+
     .first--article--icon {
         top: 96px;
         left: 249px;
-    }
+    }*/
     .first--article--text {
         width: 100%;
         padding-left: 0;
@@ -674,13 +711,25 @@ footer h2 {
         align-items: center;
     }
     .first--article--background {
+        width: 100%;
+        text-align: center;
+    }
+    .first--article--background:before {
+        display: none;
+    }
+    .first--article--icon {
+        width: 60%;
+        height: auto;
+        margin-right: 0;
+    }
+    /*.first--article--background {
         top: 0;
         left: 10px;
     }
     .first--article--icon {
         top: 96px;
         left: 249px;
-    }
+    }*/
     .first--article--text {
         width: 100%;
         padding-left: 0;
