@@ -1,8 +1,9 @@
 # BestShop
 Shop website template
 
-## Only technologies used:
+## Used technologies:
 * HTML
 * CSS
-* JS
 * RWD
+
+If You want to try it [CLICK HERE](http://grzegortoszaman.github.io/BestShop-Template/)
